@@ -23,3 +23,7 @@ To set environment vars (called "config vars") in Heroku, do:
     heroku config:set USER=[your user]
     heroku config:set PASS=[user's pass]
     heroku config:set REPO=[the repo]
+
+## Configuring the Crashlytics Web Hook
+
+To add a web hook to your app in Crashlytics, select the settings (gears) next to your app name, select Integrations, and add the URL to your running app as a Web Hook.
