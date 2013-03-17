@@ -19,6 +19,7 @@ The app uses environment variables to authenticate to Github, choose the repo fo
 * REPO: The repo to file issues on.
 
 To set environment vars (called "config vars") in Heroku, do:
+
     heroku config:set USER=[your user]
     heroku config:set PASS=[user's pass]
     heroku config:set REPO=[the repo]
