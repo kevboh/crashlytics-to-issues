@@ -2,7 +2,8 @@
   "name": "crashlytics-to-issues",
   "version": "0.0.1",
   "dependencies": {
-    "express": "2.5.x"
+    "express": "2.5.x",
+    "request" : "2.16.x"
   },
   "engines": {
     "node": "0.10.x",
