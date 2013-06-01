@@ -18,13 +18,13 @@ app.post('/', express.bodyParser(), function(req, res) {
   }
   else if (req.body.event == "issue_impact_change" && req.body.payload_type == "issue") {
     // We're being notified of an issue
-    
+
     // Build the issue payload
     var issue_data = JSON.stringify({
-      title: req.body.payload.title,
+      title: req.body.payload.title + "(Crashlytics)",
       body: "Crash in " + req.body.payload.method + ", " + req.body.payload.crashes_count + " times.\n\n" + req.body.payload.url,
       assignee: process.env.USER,
-      labels: ["Crash"]
+      labels: ["Crash", "Crashlytics"]
     });
 
     // Create an issue in Github
