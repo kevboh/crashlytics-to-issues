@@ -27,3 +27,7 @@ To set environment vars (called "config vars") in Heroku, do:
 ## Configuring the Crashlytics Web Hook
 
 To add a web hook to your app in Crashlytics, select the settings (gears) next to your app name, select Integrations, and add the URL to your running app as a Web Hook.
+
+## Disclaimer
+
+I've never written anything in node before! Be kind in your pull requests :)
