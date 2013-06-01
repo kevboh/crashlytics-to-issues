@@ -21,7 +21,7 @@ app.post('/', express.bodyParser(), function(req, res) {
 
     // Build the issue payload
     var issue_data = JSON.stringify({
-      title: req.body.payload.title + "(Crashlytics)",
+      title: req.body.payload.title + "(Crashlytics #" + req.body.payload.display_id + ")",
       body: "Crash in " + req.body.payload.method + ", " + req.body.payload.crashes_count + " times.\n\n" + req.body.payload.url,
       assignee: process.env.USER,
       labels: ["Crash", "Crashlytics"]
