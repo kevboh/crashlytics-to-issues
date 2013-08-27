@@ -29,7 +29,7 @@ app.post('/', express.bodyParser(), function(req, res) {
 
     // Create an issue in Github
     request.post({
-      uri: 'https://api.github.com/repos/' + process.env.ORGANIZATION + '/' + process.env.REPO + '/issues',
+      uri: 'https://api.github.com/repos/' + (process.env.ORGANIZATION || process.env.USER) + '/' + process.env.REPO + '/issues',
       body: issue_data,
       auth: {
         'user' : process.env.USER,
