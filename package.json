@@ -4,9 +4,5 @@
   "dependencies": {
     "express": "2.5.x",
     "request" : "2.16.x"
-  },
-  "engines": {
-    "node": "0.10.x",
-    "npm": "1.2.x"
   }
 }
