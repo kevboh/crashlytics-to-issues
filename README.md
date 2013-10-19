@@ -16,12 +16,14 @@ The app uses environment variables to authenticate to Github, choose the repo fo
 
 * USER: The user to authenticate as and assign issues to. Right now this is always the same user since I'm a one-person shop, but feel free to send pull requests allowing differentiation.
 * PASS: Password for USER. Right now the app uses basic auth. Feel free to send pull requests for OAuth2 (sense a pattern here?).
+* ORGANIZATION: The repo's organization or your github username
 * REPO: The repo to file issues on.
 
 To set environment vars (called "config vars") in Heroku, do:
 
     heroku config:set USER=[your user]
     heroku config:set PASS=[user's pass]
+    heroku config:set ORGANIZATION=[the repo's organization]
     heroku config:set REPO=[the repo]
 
 ## Configuring the Crashlytics Web Hook
